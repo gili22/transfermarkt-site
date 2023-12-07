@@ -5,44 +5,33 @@
 // const fs = require('fs');
 // const request = require('request');
 
-import request from 'request';
-import fs from 'fs'
+// import request from "request";
+// import fs from "fs";
 
+// const url = "https://transfermarkt-api.vercel.app/players/28003/profile";
+// const headers = {
+//   accept: "application/json",
+// };
 
+// var myBody = {};
+// request(
+//   {
+//     url,
+//     headers,
+//   },
 
+//   (err, response, body) => {
+//     if (err) {
+//       console.error(err);
+//     } else {
+//       myBody = JSON.parse(body);
 
-const url = 'https://transfermarkt-api.vercel.app/players/28003/profile';
-const headers = {
- 'accept': 'application/json'
-};
+//       console.log(myBody.name);
+//     }
 
-
-
-
-var myBody={}
-request({
-    url,
-    headers
-},
-
-  (err, response, body) => {
-   if (err) {
-
-    console.error(err);
-
-   } else {
-    myBody = JSON.parse(body)
-    
-    console.log(myBody.name);
-   }
-   
-
-
-fs.writeFileSync('data.json', JSON.stringify(myBody));
-});
-
-
-
+//     fs.writeFileSync("data.json", JSON.stringify(myBody));
+//   }
+// );
 
 // CHATGPT CODE:
 // const url = 'https://transfermarkt-api.vercel.app/players/28003/profile';
@@ -76,4 +65,3 @@ fs.writeFileSync('data.json', JSON.stringify(myBody));
 //   .catch((error) => {
 //     console.error('Fetch error:', error);
 //   });
-
